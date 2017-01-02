@@ -2,6 +2,7 @@
 	font-size: .8em;
 	font-color: blue;
 }
+
 .job {
 	background-color: #e9e5dc;
 	border-radius:8px;
@@ -10,6 +11,12 @@
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
-li.duties {
+.duties {
 	font-size: .8em;
 }
+h3:hover{
+	background-color: blue;
+}
+h3:nth-child(1) {
+    font-style: italic;
+    }
