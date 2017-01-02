@@ -1,0 +1,15 @@
+#contact-info {
+	font-size: .8em;
+	font-color: blue;
+}
+.job {
+	background-color: #e9e5dc;
+	border-radius:8px;
+	margin: 20px 30px;
+	padding-left: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+li.duties {
+	font-size: .8em;
+}
