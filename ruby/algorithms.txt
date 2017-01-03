@@ -1,0 +1,19 @@
+
+
+
+Making Coffee Algorithm
+-navigate toward coffeemakaing cabinet in kitchen.
+-open coffeemaking cabinet door.
+-remove coffee bean bag, coffee grinder, and french press from cabinet. 
+-place coffee bean bag,coffee grinder, and french press on countertop.
+-dispense 3 scoops of coffee beans from coffee bean bag into coffee grinder.
+-plug in coffee grinder into power supply and push "start button"
+-Grind coffee for 10 seconds.
+-If coffee is ground to a medium coarseness:
+    -dump ground coffee into french press.
+    -pour boiling water into french press.
+    -steep for 3 minutes. 
+-Otherwise, push "start button" on coffee grinder for 10 more seconds.
+    -dump ground coffee into french press.
+    -pour boiling water into french press.
+    -steep for 3 minutes.  
