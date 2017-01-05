@@ -1,0 +1,44 @@
+body {
+	background-color: grey;
+	display: inline-block;
+	vertical-align: top;
+	margin: 2%;
+	width: 50%;
+}
+p { 
+font-size: 18px;
+font-family: Gill Sans Extrabold, sans-serif;
+ }
+ .fancy {
+ 	border: solid 2px;
+ 	padding: 10px 5px 15px;
+ 	margin: 2cm 4cm 3cm 4cm;
+ 	background-color: white;
+ 	font-style: italic;
+ }
+ ul {
+  display: inline-block;
+  margin: 6%;
+  width: 20%;
+  line-height: 100px;
+  list-style-type: circle;
+
+}
+h1,h2,h3{
+	letter-spacing: 15px;
+}
+h1:hover {
+	background-color: red;
+}
+h2:hover {
+	background-color: red;
+}
+h3:hover {
+	background-color: red;
+}
+.underline {
+	text-decoration: underline;
+}
+tr:nth-child(even) {
+    background-color: beige;
+}
