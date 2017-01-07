@@ -20,7 +20,7 @@ if age=""
 	puts "nil"
 end
 puts "#{age}"
-puts "This is the hamsters info: Name #{name}"
+puts "This is the hamster's name is #{name}"
 puts "He's loud with a volume level of #{volume}"
 puts "The fur color is #{fur}"
 puts "Is he/she a good cadidate for adoption? #{adoption}"
