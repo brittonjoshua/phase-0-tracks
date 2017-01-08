@@ -23,21 +23,21 @@ end
 
 #OUR DRIVER CODE 
 puts "Encrypt/Decrypt example:"
-encrypt("abc")
- encrypt("zed")
- decrypt("bcd")
- decrypt("afe")
-puts "How's it going? Would you like to decrypt or encrypt a message?"
-	code_input=gets.chomp
-puts "Whats the password?"
+puts encrypt("abc")
+puts encrypt("zed")
+puts decrypt("bcd")
+puts decrypt("afe")
+
+puts "How's it going? Whats the password?"
 	password=gets.chomp
-	if password="" && code_input="encrypt"
-	  puts "type a word to encrypt:"
-	    input=gets.chomp
-	  encrypt(input)
-	else password="" && code_input="decrypt"
-	  puts "type a word to decrypt:"
-	    input=gets.chomp
-	  decrypt(input)
+puts "Would you like to decrypt or encrypt a message?"
+	input=gets.chomp
+	if input=="encrypt"
+		puts "type a word to encrypt:"
+	    	encrypted_word=gets.chomp
+		puts encrypt(encrypted_word)
+	else puts "type a word to decrypt:"
+		  decrypted_word=gets.chomp
+	puts decrypt(decrypted_word)		  
  end
- end
+ puts "until next time..."
