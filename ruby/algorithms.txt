@@ -1,0 +1,38 @@
+Robot Using an Elevator
+
+-Navigate to Elevator Doors until directional buttons are within reach.
+-If traveling upwords:
+    -press button with up arrow.
+-Otherwise:
+    -press button with down arrow.
+-Wait for elevator doors to open.
+-Once elevator doors open, navigate into an unencountered free space in elevator.
+If traveling upwords:
+    -scan the numbered buttons, and depress the number corresponding with your destination floor number. 
+    -twiddle thumbs until correct floor number illuminates above elevator doors.
+    -once your floor is reached, wait for doors to open, then exit elevator.
+Otherwise: 
+    -Depress the Lobby button.
+    -mention the current weather conditions to any other passengers on elevator.
+    -once Lobby level is reached, wait for door to open.
+    -allow others to exit first, then exit the elevator.
+
+
+
+Making Coffee Algorithm
+
+-navigate toward coffeemakaing cabinet in kitchen.
+-open coffeemaking cabinet door.
+-remove coffee bean bag, coffee grinder, and french press from cabinet. 
+-place coffee bean bag,coffee grinder, and french press on countertop.
+-dispense 3 scoops of coffee beans from coffee bean bag and pour into coffee grinder.
+-plug in coffee grinder into power supply and push "start button"
+-Grind coffee for 10 seconds.
+-If coffee is ground to a medium coarseness:
+    -dump ground coffee into french press.
+    -pour boiling water into french press.
+    -steep for 3 minutes. 
+-Otherwise, push "start button" on coffee grinder for 10 more seconds.
+    -dump ground coffee into french press.
+    -pour boiling water into french press.
+    -steep for 3 minutes.  

@@ -25,12 +25,7 @@ puts "Estimated age?"
 if(age != nil)
   puts "This hamster is so old!"
 end
-      
-puts "#{age}."
 
-
-#Final Results
-puts "This is the hamsters info: Name #{name}"
 puts "He's loud with a volume level of #{volume}"
 puts "The fur color is #{fur}"
 puts "Is he/she a good cadidate for adoption? #{adoption}"
