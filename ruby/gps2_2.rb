@@ -58,3 +58,15 @@ def print_list(list)
 	list.each {|item, quantity| puts "you have #{quantity} #{item}."}
 end
 print_list(our_list)
+
+#REFLECTIONS...
+# It was nice being able to break each method down into different parts and 
+#staring with pseudocoding made the process move smoothly as the objectives were clear. 
+#Using a hash for this list was appropriate as it's an unordered list and fits
+# well with  key-value parameters.
+#A method returns the value of the last statement in the method.
+#You may pass different arrays, hashes, blocks into methods as arguments.
+#This exercise helped understand the proper way of creating a series of different methods 
+#that combine the use of hashes, arrays and blocks to perform different types of functions.
+#I think I'm still getting comfortable with the relationship of blocks and data structures within methods, but 
+#getting there! The usage of .each became quite a bit clearer with this session.
