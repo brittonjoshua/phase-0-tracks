@@ -1,0 +1,2 @@
+class Wordgame
+end
