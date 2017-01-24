@@ -6,8 +6,8 @@ function reverse(str) {
 	var newstring = '';
 // initialize counter variable to start at the last letter
 //of a string and start a For Loop.
-//give a command that iterates through word and decreases through the
-//word until it reaches zero
+//give a command that iterates through the word and decreases through the
+//word until it reaches zero.
 	for (var i = str.length - 1; i >=0; i--) {
 		newstring += str[i];
 		
