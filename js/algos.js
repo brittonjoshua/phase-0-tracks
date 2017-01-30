@@ -56,8 +56,22 @@ var alphabet = "abcdefghijklmnopqrstuvwxyz"
 var newWord = ""
 
 for( var i=0; i < int; i++ )
-	text += alphabet.charat(Math.floor(math.random() * alphabet.length));
+	newWord += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
 return newWord;
 }
 
-console.log{randomString(5)}
+console.log(randomString(7))
+
+//Driver code: Run though randomString function 10 times to return 10 random strings.
+//print array
+//Feed the new array to the arrayLength function **didn't get there**
+//print results
+
+
+console.log("Here's the final random words...")
+
+for (var i = 1; i<10; i++) randomString(i);
+  arrayLength(randomString(i));
+  
+console.log(randomString(i))
+
