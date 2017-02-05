@@ -1,5 +1,5 @@
 #RELEASE ONE. Declare an array and hash.
-#write array for music types, and hash of bands and albums. 
+#write array for music types, and hash of bands and albums.. 
 
 music=["rock","folk","soul","jazz","funk"]
 bands={
