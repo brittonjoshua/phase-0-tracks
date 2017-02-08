@@ -2,8 +2,8 @@
 #Class:Puppy
 #Characteristics:
 #size: sm,med,large
-#spotted: varies
-#color: varies
+#spotted: big spots, small spots
+#color: brown, black, white, multi-colored
 #paws:4 
 
 #Behavior:
