@@ -1,37 +1,50 @@
+## define a Santa class and include 3 instance methods : speak, eat milk and cookies, and initialize.
+##Add the attributes of gender (string),ethnicity(string), reindeer_ranking(array), and age(integer) 
+## which is not passed on in initialization.
 class Santa
-	attr_accessor :gender, :ethnicity
 
+	@age = 0
+	@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+	
 	def initialize(gender, ethnicity)
-		puts "initializing Santa instance"
+		puts "Initializing Santa instance..."
 		@gender = gender
 		@ethnicity = ethnicity
-	end
+	end 
 
-reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-age = 0	
+## add celebrate birthday method that ages santa by one year.
+	def celebrate_birthday
+		new_age = @age +1
+	end 
 
 	def speak
-		 puts "Ha, ha, ha! Hoopy Holidays."	
+		puts "Ho, ho, ho happy holidays!"
 	end
 
-	def eat_cookies_and_milk(cookie)
-		puts "that was a good #{cookie}!"
+## add method that takes reindeers name as an argument and moves it to the last position.
+	def get_mad_at (reindeer)
+		@reindeer_ranking.index(reindeer).rotate
+	end 
+
+	def eat_milk_and_cookies(cookie)
+		puts "That was a good #{cookie} cookie!"
 	end
 
-	def celebrate_birthday (old_age)
-		new_age = old_age+1
-		puts new_age
-	end
-
-	def get_mad_at(reindeer)
-		reindeer_ranking.rotate("reindeer")
-	end
-
-	def gender=(new_gender)
-		@gender = new_gender
+## add setter method that allows gender to be accessed outside class.
+	def gender=(gender)
+		@gender = gender
 	end
 end
 
+##Add test code to initialize different santa instances and call the methods 
+
+santa1 = Santa.new
+p santa1.eat_milk_and_cookies("sugar") 
+santa2 = Santa.new 
+p santa2.eat_milk_and_cookies("gingerbread")
+p santa2.speak
+
+##Driver code, add some new instances of Santa class.
 santas = []
 santas << Santa.new("agender", "black")
 santas << Santa.new("female", "Latino")
@@ -40,42 +53,3 @@ santas << Santa.new("male", "Japanese")
 santas << Santa.new("female", "prefer not to say")
 santas << Santa.new("gender fluid", "Mystical Creature (unicorn)")
 santas << Santa.new("N/A", "N/A")
-santas.each do |san|
-	san.speak
-end 
-santas.each do |san|
-	san.speak 
-	san.eat_cookies_and_milk("sugar cookie")
-end
-
-santas.map do |san|
-	san.eat_cookies_and_milk("piece of fudge")
-	end
-
-santas.each do |san|
-	san.celebrate_birthday(40)
-	end	
-
-santas.each do |san|
-	 san.ethnicity
-end
-
-
-
-#write a program that creates a new santa with random gender and ethnicity.
-# age is also random between 1-140
-ethnicity = ["black", "Japanese", "Chinese", "Korean", "white"]
-gender = ["male","female","transgender", "bigender"]
-
-
- 50.times do |san|
- 	@santa_ethnicity = ethnicity.sample
-  	@santa_gender = gender.sample
- 	@santa_age = rand(140)
-
-p "This Santa is: #{@santa_ethnicity} and #{@santa_gender} and is #{@santa_age}."
-
-end
-
-
-
