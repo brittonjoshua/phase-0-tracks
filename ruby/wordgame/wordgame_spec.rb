@@ -1,4 +1,4 @@
-#rspec file
+#rspec file  
 require_relative 'wordgame'
 
 describe WordGame do
