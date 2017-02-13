@@ -3,10 +3,10 @@ require_relative 'wordgame'
 
 describe WordGame do
 	let(:new_game) { WordGame.new("hippo") }
-end
 
-it "sets the new word upon initialization" do
-	expect(new_game.initialize).to eq "hippo"
+
+it "prints dashes for each character space" do
+	expect(new_game.dashes).to eq "_ _ _ _ _ "
 	end
 
 it "expects the number of guesses to equal number of letters" do
@@ -14,6 +14,6 @@ it "expects the number of guesses to equal number of letters" do
 	 end
 
 it "returns a message based on whether letter is in word or not." do
-	 expect(new_game.show_progress('h')). to eq display_string[0]
+	 expect(new_game.show_progress('h')). to eq "h____"
 	 end
 end 
