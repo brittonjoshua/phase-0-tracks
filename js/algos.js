@@ -43,11 +43,8 @@ function equalObject (obj1, obj2) {
 equalObject(Steven, Tamir)
 
 //create an alphabet string.
-//write a function that takes an integer, builds and returns a random string of the 
-//given length. 
-//random string will be the length of random number recieved(1-10 characters).
-//iterate through alphabet array and return number of random letters.
-//push string into new string array.
+//write a function that takes an integer for how many strings in an array.
+//function builds and returns an array of random words, 1-10 characters in length.
 
 function randomString(int)
 {
@@ -55,8 +52,9 @@ var alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 var newWord = ""
 
-for( var i=0; i < int; i++ )
-	newWord += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+for( var i=0; i < 10; i++ )
+	newWord += alphabet.charAt(Math.floor(Math.random(int) * alphabet.length));
+}
 return newWord;
 }
 
@@ -64,14 +62,16 @@ console.log(randomString(7))
 
 //Driver code: Run though randomString function 10 times to return 10 random strings.
 //print array
-//Feed the new array to the arrayLength function **didn't get there**
+//Feed the new array to the arrayLength function ....hmm, I'm stumped!!!
 //print results
 
 
 console.log("Here's the final random words...")
 
-for (var i = 1; i<10; i++) randomString(i);
+for (var i = 1; i<10; i++) {
+	randomString(i);
   arrayLength(randomString(i));
   
-console.log(randomString(i))
+console.log(randomString(i));
+}
 
