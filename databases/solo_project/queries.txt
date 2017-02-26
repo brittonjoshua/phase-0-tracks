@@ -1,0 +1,60 @@
+1.
+sqlite> SELECT * FROM observer;
+
+1|Billy Jo Bob|1945-01-01|14
+2|Jerry Lee Huckey|1956-04-22|14
+3|Ann Margaret|1959-09-28|5
+4|Jimmy James|1966-07-02|9
+
+2.UPDATE location SET County ="Manitou" WHERE StateName ="Colorado";
+
+1|Buxton|35.1828394929385|Alabama
+2|Fisher|67.3874894920494|Alaska
+3|Madison|45.9078674738293|Arkansas
+4|Opomine|32.123454567688|Arizona
+5|Truckee|27.9384756287392|California
+6|Manitou|63.0789394758193|Colorado
+
+3.sqlite> SELECT * FROM observer UNION SELECT * FROM location;
+
+1|Billy Jo Bob|1945-01-01|14
+1|Buxton|35.1828394929385|Alabama
+2|Fisher|67.3874894920494|Alaska
+2|Jerry Lee Huckey|1956-04-22|14
+3|Ann Margaret|1959-09-28|5
+3|Madison|45.9078674738293|Arkansas
+4|Jimmy James|1966-07-02|9
+4|Opomine|32.123454567688|Arizona
+5|Truckee|27.9384756287392|California
+6|Manitou|63.0789394758193|Colorado
+sqlite>
+
+4. sqlite> SELECT SightingDate FROM observer UNION SELECT County FROM location;
+
+1945-01-01
+1956-04-22
+1959-09-28
+1966-07-02
+Buxton
+Fisher
+Madison
+Manitou
+Opomine
+Truckee
+
+5.sqlite> DELETE FROM location WHERE County="Manitou";
+sqlite> SELECT * FROM location;
+State|County|GPS|StateName
+1|Buxton|35.1828394929385|Alabama
+2|Fisher|67.3874894920494|Alaska
+3|Madison|45.9078674738293|Arkansas
+4|Opomine|32.123454567688|Arizona
+5|Truckee|27.9384756287392|California
+sqlite>
+
+JOINS 
+
+sqlite> SELECT observer.ID,observer.Name,observer.SightingDate,observer.State_id FROM observer INNER JOIN location ON observer.State_id=location.State;
+ID|Name|SightingDate|State_id
+3|Ann Margaret|1959-09-28|5
+
