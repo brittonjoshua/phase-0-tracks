@@ -49,3 +49,18 @@ end
 def add_region(db, state,country)
 	db.execute("INSERT INTO region (state, country) VALUES(?,?)", [state,country])
 end 
+
+#array of wine types to sample from.
+wine_array = ["Chardonnay", "Sauvignon Blanc","Pinot Noir","Malbec","Cabernet","Bordeaux","Tempranillo"]
+
+#adding wines and regions into database. Faker Twin Peaks locations used as vinyard names
+
+40.times do 
+	add_wine(db,wine_array.sample,Faker::TwinPeaks.location,Faker::Number.between(1800, 2010),Faker::Number.between(70, 100),Faker::Number.between(1, 40)
+	add_region(db,Faker::Address.state,Faker::Address.country)	
+end 
+
+#Retrieve wine types in order, with the best rated wines at the top. 
+
+sort_ratings = db.execute("SELECT * FROM wine_type ORDER BY rating DESC")
+
