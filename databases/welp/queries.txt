@@ -1,0 +1,15 @@
+sqlite> SELECT reviews.stars, reviews.comment,businesses.name FROM reviews JOIN businesses ON reviews.business_id=businesses.Id;
+5|Great Food|The Beagle Nightclub
+4|Quick Service|Amir's Towing
+4|Nice Scenery|Grundey Hallow Wedding Chapel
+
+
+sqlite> SELECT reviews.stars, reviews.comment,businesses.name,users.first_name,users.last_name FROM reviews JOIN businesses ON reviews.business_id=businesses.Id JOIN users ON reviews.users_id=users.id;
+5|Great Food|The Beagle Nightclub|Bradford|Pitt
+4|Quick Service|Amir's Towing|Angela|Jolie
+4|Nice Scenery|Grundey Hallow Wedding Chapel|Mandy|Kaling
+sqlite>
+
+sqlite> SELECT reviews.stars, reviews.comment,businesses.name,users.first_name,users.last_name FROM reviews JOIN businesses ON reviews.business_id=businesses.Id JOIN users ON reviews.users_id=users.id WHERE businesses.name="Amir's Towing";
+4|Quick Service|Amir's Towing|Angela|Jolie
+sqlite>
