@@ -1,3 +1,5 @@
+8.4 Many to Many
+
 sqlite> SELECT reviews.stars, reviews.comment,businesses.name FROM reviews JOIN businesses ON reviews.business_id=businesses.Id;
 5|Great Food|The Beagle Nightclub
 4|Quick Service|Amir's Towing
