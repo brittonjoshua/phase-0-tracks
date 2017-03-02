@@ -1,0 +1,8 @@
+Linux was designed as a free/low-cost alternative to other UNIX based systems.
+It is considered a layered architecture OS with a hardlayer (RAM,CPU,HDD,etc), a kernal layer that manages input/output, and a shell that serves as an interface between user and kernal. Linux is known for being fast, easy to use, opensource, and able to power servers or laptops all over the world. 
+
+A VPS, or virtual private server is essentially a private machine that can be used just like a physical computer, but consists of web server software, a FTP program, a mail server, etc. VPS are capable of running thier own operation systems. 
+
+As opposed to a shared hosting site, a VPS doesn't rely on the hosting sites performance for performance and uptime. If another website happens to crash the hosted server, it would also affect your website. The other benefit is that you get root access to your environment. You don't have to rely on a hosting provider to support a custom software package if needed. Lastly, one of the greatest benefits is the ability to scale with a VPS. You can grow your 'container' resources as required.
+
+It's considered a bad idea to operate as a root user in Linux, as you open the possibilty to harm from any other applications ran from root. Not only viruses, but any bugs in an applicaton could affect system files. There's no checking if you're trying to do something stupid, such as reformat your disk. The system will just assume that you intend to do something because it's the root user. 
