@@ -9,7 +9,7 @@ db.results_as_hash = true
 # add a query parameter
 # GET /
 get '/' do
-  "#{params[:name]} is #{params[:age]} years old."
+ "#{params[:name]} is #{params[:age]} years old."
 end
 
 # write a GET route with
@@ -18,6 +18,33 @@ get '/about/:person' do
   person = params[:person]
   "#{person} is a programmer, and #{person} is learning Sinatra."
 end
+
+#write a GET route that displays an address
+get '/contact/:address' do
+  address = params[:address]
+  "The mailing address is: #{address}!"
+end 
+
+#write a GET route that creates a great job route, takes a persons name
+# as a query parameter in great job statement. If person's name missing,
+# puts 'good job'.
+get '/great_job/' do 
+  name = params[:name]
+  if name 
+    "Great job #{name}!"
+  else 
+    "Great job!"
+  end
+end 
+
+#write a GET route that takes two numbers and adds them together. 
+get '/:number_1/adds/:number_2' do 
+  number_1 = params[:number_1]
+  number_2 = params[:number_2]
+  answer = number_1.to_i + number_2.to_i
+  "#{number_1} plus #{number_2} = #{answer.to_s}"
+end 
+
 
 get '/:person_1/loves/:person_2' do
   "#{params[:person_1]} loves #{params[:person_2]}"
@@ -44,3 +71,19 @@ get '/students/:id' do
   student = db.execute("SELECT * FROM students WHERE id=?", [params[:id]])[0]
   student.to_s
 end
+
+#write a GET route that filters students based on age, and returns students who are
+#less than the given age old. 
+get '/young_students/:age' do 
+  students = db.execute("SELECT * FROM students WHERE age <=?", [params[:age]])
+  students.to_s
+ 
+end 
+
+#Release 1 
+# There are a variety of other web app libraries available for Ruby. Some 
+# examples include:Ruby on Rails, Rack,Camping, Hobo,marley,Espresso...
+#Some other gems for using a database with Sinatra would be PostgreSql
+#(with heroku,activemapper, datamapper)
+#Mongo-(useful for document oriented databases),
+#A webstack collectively refers to a database software, operating system, and programming language.
