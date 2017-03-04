@@ -71,3 +71,19 @@ get '/students/:id' do
   student = db.execute("SELECT * FROM students WHERE id=?", [params[:id]])[0]
   student.to_s
 end
+
+#write a GET route that filters students based on age, and returns students who are
+#less than the given age old. 
+get '/young_students/:age' do 
+  students = db.execute("SELECT * FROM students WHERE age <=?", [params[:age]])
+  students.to_s
+ 
+end 
+
+#Release 1 
+# There are a variety of other web app libraries available for Ruby. Some 
+# examples include:Ruby on Rails, Rack,Camping, Hobo,marley,Espresso...
+#Some other gems for using a database with Sinatra would be PostgreSql
+#(with heroku,activemapper, datamapper)
+#Mongo-(useful for document oriented databases),
+#A webstack collectively refers to a database software, operating system, and programming language.
